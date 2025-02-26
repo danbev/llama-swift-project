@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MyLlamaPackage",
     platforms: [
-        .macOS(.v10_15)
+        .macOS("13.3")
     ],
     dependencies: [
         .package(path: "/Users/danbev/work/llama.cpp")
