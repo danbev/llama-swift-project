@@ -15,7 +15,7 @@ let package = Package(
         .executableTarget(
             name: "MyLlamaPackage",
             dependencies: [
-            .product(name: "llama", package: "llama.cpp")
+            .product(name: "llama.cpp", package: "llama.cpp")
             ])
     ]
 )
