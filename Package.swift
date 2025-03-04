@@ -17,7 +17,8 @@ let package = Package(
         .binaryTarget(
             name: "LlamaFramework",
             // Local testing
-            path: "../../llama.cpp/llama-xcframework.zip"
+            //path: "../../llama.cpp/llama-xcframework.zip"
+            path: "../../llama.cpp/build-apple/llama.xcframework"
 
             // GitHub release testing
             /*
