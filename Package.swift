@@ -5,9 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "MyLlamaPackage",
-    platforms: [
-        .macOS("13.3")
-    ],
     targets: [
         .executableTarget(
             name: "MyLlamaPackage",
