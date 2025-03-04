@@ -8,14 +8,26 @@ let package = Package(
     platforms: [
         .macOS("13.3")
     ],
-    dependencies: [
-        .package(path: "/Users/danbev/work/llama.cpp")
-    ],
     targets: [
         .executableTarget(
             name: "MyLlamaPackage",
             dependencies: [
-            .product(name: "llama.cpp", package: "llama.cpp")
-            ])
+                "LlamaFramework"
+            ]),
+        .binaryTarget(
+            name: "LlamaFramework",
+            // Local testing
+            path: "../../llama.cpp/llama-xcframework.zip"
+
+            // GitHub release testing
+            /*
+            url: "https://github.com/ggml-org/llama.cpp/releases/download/bxxxx/llama-bxxxx-xcframework.zip",
+            // Check sum can be genenerated using:
+            // swift package compute-checksum llama-xcframework.zip
+            checksum: "<checksum>"
+            */
+        )
+        
+
     ]
 )
