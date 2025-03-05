@@ -13,19 +13,8 @@ let package = Package(
             ]),
         .binaryTarget(
             name: "LlamaFramework",
-            // Local testing
-            //path: "../../llama.cpp/llama-xcframework.zip"
-            path: "../../llama.cpp/build-apple/llama.xcframework"
-
-            // GitHub release testing
-            /*
-            url: "https://github.com/ggml-org/llama.cpp/releases/download/bxxxx/llama-bxxxx-xcframework.zip",
-            // Check sum can be genenerated using:
-            // swift package compute-checksum llama-xcframework.zip
-            checksum: "<checksum>"
-            */
+            url: "https://github.com/ggml-org/llama.cpp/releases/download/b4826/llama-b1-xcframework.zip",
+            checksum: "08d9ff244b8c16d46e2947c683d32b758014e5fb8ac13bf4a637983b28ecb28f"
         )
-        
-
     ]
 )
